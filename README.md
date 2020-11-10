@@ -5,3 +5,5 @@ soho vibes for Sublime Text
 
 Tested on Sublime Text 3, should work on 2 as well.
 Instructions on how to install the .tmTHeme: https://colorsublime.github.io/how-to-install-a-theme/
+
+![preview](https://i.imgur.com/aO8nlPJ.png)
