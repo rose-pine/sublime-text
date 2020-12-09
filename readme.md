@@ -16,3 +16,7 @@ Instructions on how to install the .tmTHeme: https://colorsublime.github.io/how-
 ### Screenshots
 
 ![Sublime Text with Rosé Pine](https://i.imgur.com/aO8nlPJ.png)
+
+## Thanks to 
+
+- [ThatOneCalculator](https://github.com/thatonecalculator)
