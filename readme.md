@@ -11,7 +11,7 @@ All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
 ## Usage
 
 Tested on Sublime Text 3, should work on 2 as well.
-Instructions on how to install the .tmTHeme: https://colorsublime.github.io/how-to-install-a-theme/
+Instructions on how to install the .tmTheme: https://colorsublime.github.io/how-to-install-a-theme/
 
 ### Screenshots
 
