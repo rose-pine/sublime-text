@@ -16,7 +16,7 @@
 Tested on Sublime Text 3, should work on 2 as well.
 Instructions on how to install the .tmTheme: https://colorsublime.github.io/how-to-install-a-theme/
 
-### Screenshots
+## Gallery
 
 ![Sublime Text with Rosé Pine](https://i.imgur.com/aO8nlPJ.png)
 
