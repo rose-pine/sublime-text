@@ -46,6 +46,16 @@
 
         "match": "var(rose)",
         "match_foreground": "var(base)",
+
+        // Tooltips and Extensions
+        "--redish": "var(love)",
+        "--orangish": "var(gold)",
+        "--yellowish": "var(gold)",
+        "--greenish": "var(pine)",
+        "--cyanish": "var(foam)",
+        "--bluish": "var(foam)",
+        "--purplish": "var(iris)",
+        "--pinkish": "var(love)",
     },
     "globals": {
         /**
