@@ -192,6 +192,14 @@
          * Enhancements
          */
 
+        // Keys
+
+        {
+            "name": "JSON keys",
+            "scope": "meta.mapping.key string",
+            "foreground": "var(keys)"
+        },
+
         // from rose-pine.tmTheme by That1Calculator
 
         {
