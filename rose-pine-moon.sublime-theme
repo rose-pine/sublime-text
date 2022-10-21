@@ -1,0 +1,281 @@
+{
+    "extends": "Adaptive.sublime-theme",
+    "variables": {
+        // https://rosepinetheme.com/palette
+        "base": "#232136",
+        "surface": "#2a273f",
+        "overlay": "#393552",
+        "muted": "#6e6a86",
+        "subtle": "#908caa",
+        "text": "#e0def4",
+        "love": "#eb6f92",
+        "gold": "#f6c177",
+        "rose": "#ea9a97",
+        "pine": "#3e8fb0",
+        "foam": "#9ccfd8",
+        "iris": "#c4a7e7",
+        "highlight-low": "#2a283e",
+        "highlight-med": "#44415a",
+        "highlight-high": "#56526e",
+    },
+    "rules": [
+        // > All values should be set
+        // > because otherwise they're cached
+
+        //
+        // WINDOW
+        //
+
+        {
+            "class": "title_bar",
+            "fg": "var(subtle)",
+            "bg": "var(base)",
+            "style": "dark",
+        },
+
+        //
+        // SIDEBAR
+        //
+
+        {
+            "class": "sidebar_tree",
+            "layer0.tint": "var(base)",
+            "layer0.opacity": 1,
+        },
+        {
+            "class": "tree_row",
+            "color": "var(subtle)",
+            "layer0.opacity": 0,
+        },
+        {
+            "class": "tree_row",
+            "attributes": ["selected"],
+            "color": "var(text)",
+            "layer0.tint": "var(highlight-low)",
+            "layer0.opacity": 1,
+        },
+        {
+            "class": "sidebar_label",
+            "color": "var(subtle)",
+            "layer0.opacity": 0,
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [
+                { "class": "tree_row", "attributes": ["selected"] }
+            ],
+            "color": "var(text)",
+            "layer0.opacity": 0,
+        },
+
+        //
+        // TAB UI
+        //
+
+        // Tab bar
+        {
+            "class": "tabset_control",
+            // background
+            "layer0.tint": "var(base)",
+            "layer0.opacity": 1,
+            // also background
+            "layer1.tint": "var(base)",
+            "layer1.opacity": 0,
+            // these are all background
+            "layer2.tint": "var(base)",
+            "layer2.opacity": 0,
+            // yep
+            "layer3.tint": "var(base)",
+            "layer3.opacity": 0,
+            "mouse_wheel_switch": false
+        },
+        {
+            "class": "tabset_control",
+            "settings": ["mouse_wheel_switches_tabs"],
+            "mouse_wheel_switch": true,
+        },
+
+        // Tabs
+        {
+            "class": "tab_control",
+            // behind tab
+            "layer0.tint": "var(base)",
+            "layer0.opacity": 1,
+            // tab shape
+            "layer1.tint": "var(surface)",
+            "layer1.opacity": 0,
+            // highlight top
+            "layer2.tint": "var(surface)",
+            "layer2.opacity": 0,
+            // dividers
+            "layer2.tint": "var(base)",
+            "layer3.opacity": 0,
+        },
+        {
+            "class": "tab_control",
+            "attributes": ["hover"],
+            "layer1.opacity": 1,
+        },
+        {
+            "class": "tab_control",
+            "attributes": ["selected"],
+            "layer1.tint": "var(rose)",
+            "layer1.opacity": 1,
+        },
+
+        // Tab text
+        {
+            "class": "tab_label",
+            "color": "var(subtle)",
+            "font.italic": false,
+        },
+        {
+            "class": "tab_label",
+            "parents": [{ "class": "tab_control", "attributes": ["selected"] }],
+            "color": "var(text)",
+        },
+
+        // Close buttons/modified symbol
+        {
+            "class": "tab_close_button",
+            "layer0.tint": "var(muted)",
+            "layer0.opacity": 1,
+        },
+        {
+            "class": "tab_close_button",
+            "attributes": ["hover"],
+            "layer0.tint": "var(text)",
+            "layer0.opacity": 1,
+            "blur": false,
+        },
+
+        // Modified files
+        {
+            "class": "tab_close_button",
+            "parents": [{ "class": "tab_control", "attributes": ["dirty"] }],
+            "layer0.tint": "var(rose)",
+            "layer0.opacity": 1,
+        },
+        {
+            "class": "tab_close_button",
+            "attributes": ["hover"],
+            "parents": [{ "class": "tab_control", "attributes": ["dirty"] }],
+            "layer0.tint": "var(love)",
+            "layer0.opacity": 1,
+        },
+
+        //
+        // SCROLL BARS
+        //
+
+        // Background
+        {
+            "class": "scroll_bar_control",
+            // ignored...
+            "layer0.tint": "var(base)",
+            "layer0.opacity": 0,
+            // effective
+            "layer1.tint": "var(surface)",
+            "layer1.opacity": 1,
+        },
+
+        // Track
+        {
+            "class": "scroll_track_control",
+            "layer0.tint": "var(highlight-low)",
+            "layer0.opacity": 1,
+            "blur": false
+        },
+
+        // Scroller
+        {
+            "class": "puck_control",
+            "layer0.tint": "var(highlight-med)",
+            "layer0.opacity": 1,
+            "blur": false
+        },
+
+        //
+        // STATUS BAR
+        //
+
+        {
+            "class": "status_bar",
+            "layer0.tint": "var(base)",
+            "layer0.opacity": 1,
+        },
+        {
+            "class": "label_control",
+            "parents": [{"class": "status_bar"}],
+            "color": "var(subtle)",
+        },
+
+        //
+        // PANELS
+        //
+
+        // Quick panel background
+        {
+            "class": "overlay_control",
+            "layer0.tint": "var(base)",
+            "layer0.opacity": 1,
+        },
+
+        // Command pallete row
+        {
+            "class": "quick_panel_label",
+            "fg": "var(subtle)",
+            "match_fg": "var(rose)",
+            "selected_fg": "var(text)",
+            "selected_match_fg": "var(rose)",
+        },
+        {
+            "class": "mini_quick_panel_row",
+            "layer0.tint": "var(base)",
+            "layer0.opacity": 1,
+        },
+        {
+            "class": "mini_quick_panel_row",
+            "attributes": ["selected"],
+            "layer0.tint": "var(highlight-low)",
+            "layer0.opacity": 1,
+        },
+
+        // Bottom panel background
+        {
+            "class": "panel_control",
+            "layer0.tint": "var(base)",
+            "layer0.opacity": 1,
+        },
+
+        //
+        // CODE COMPLETION DROPDOWN
+        //
+
+        {
+            "class": "popup_control",
+            "layer0.tint": "var(base)",
+            "layer0.opacity": 1,
+        },
+        {
+            "class": "auto_complete_label",
+            "fg": "var(subtle)",
+            "match_fg": "var(rose)",
+            "selected_fg": "var(text)",
+            "selected_match_fg": "var(text)",
+        },
+        {
+            "class": "table_row",
+            "layer0.tint": "var(base)",
+            "layer0.opacity": 1,
+            "layer1.tint": "var(highlight-low)",
+            "layer1.opacity": 0,
+        },
+        {
+            "class": "table_row",
+            "attributes": ["selected"],
+            "layer1.tint": "var(highlight-low)",
+            "layer1.opacity": 1
+        },
+    ]
+}
