@@ -1,8 +1,9 @@
 {
     "name": "Rosé Pine Dawn",
-    "author": "Chris Hallberg <chris.hallberg@hey.com>",
+    "description": "All natural pine, faux fur and a bit of soho vibes for the classy minimalist",
+    "type": "light",
     "project": "https://github.com/rose-pine/sublime-text",
-    "notes": "",
+    "author": "Chris Hallberg <chris.hallberg@hey.com>",
     "variables": {
         // https://rosepinetheme.com/palette
         "base": "#faf4ed",

@@ -20,6 +20,10 @@ Instructions on how to install the .tmTheme: https://colorsublime.github.io/how-
 
 ![Sublime Text with Rosé Pine](https://i.imgur.com/aO8nlPJ.png)
 
+## Update
+
+`npx @rose-pine/build -t template.sublime-color-scheme -o .`
+
 ## Thanks to 
 
 - [ThatOneCalculator](https://github.com/thatonecalculator)
