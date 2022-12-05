@@ -22,8 +22,8 @@ Instructions on how to install the .tmTheme: https://colorsublime.github.io/how-
 
 ## Update
 
-`npx @rose-pine/build -t template.sublime-theme -o .`
+`npx @rose-pine/build -t template.sublime-color-scheme -o .`
 
-## Thanks to
+## Thanks to 
 
 - [ThatOneCalculator](https://github.com/thatonecalculator)
