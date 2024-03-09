@@ -13,8 +13,8 @@
 
 ## Usage
 
-Tested on Sublime Text 3, should work on 2 as well.
-Instructions on how to install the .tmTheme: https://colorsublime.github.io/how-to-install-a-theme/
+For Sublime Text 4, should also work on 3.
+To install, from the menu go to Preferences > Browse Packages. Then download this reposity to a new directory called "Rosé Pine" inside the "Packages" directory.
 
 ## Gallery
 
