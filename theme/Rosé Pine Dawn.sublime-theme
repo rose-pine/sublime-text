@@ -173,8 +173,8 @@
 		"auto_complete_bg_dark_tint": "var(overlay)",
 		"auto_complete_bg_light_tint": "var(overlay)",
 
-		"auto_complete_selected_row_dark_tint": "var(highlight-low)",
-		"auto_complete_selected_row_light_tint": "var(highlight-low)",
+		"auto_complete_selected_row_dark_tint": "var(highlight-med)",
+		"auto_complete_selected_row_light_tint": "var(highlight-med)",
 
 		"auto_complete_text_dark_tint": "var(text)",
 		"auto_complete_text_light_tint": "var(text)",
