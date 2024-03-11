@@ -1808,7 +1808,7 @@
 
 		{
 			"class": "icon_highlight",
-			"layer0.texture": "Theme - Default/common/icon_highlight.png",
+			"layer0.texture": "Theme - Default/common/icon_highlight_matches.png",
 			"layer0.opacity": "var(opaque)",
 			"layer0.tint": "var(muted)",
 			"content_margin": [14, 11]
