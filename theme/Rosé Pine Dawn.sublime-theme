@@ -1630,15 +1630,18 @@
 		{
 			"class": "panel_close_button",
 			"layer0.texture": "Theme - Default/common/panel_close.png",
-			"layer0.tint": "var(shape_tint)",
+			"layer0.tint": "var(muted)",
 			"layer0.opacity": "var(opaque)",
+			"layer1.texture": "Theme - Default/common/panel_close.png",
+			"layer1.tint": "var(subtle)",
+			"layer1.opacity": "var(transparent)",
 			"content_margin": 8
 		},
 		{
 			"class": "panel_close_button",
 			"attributes": ["hover"],
 			"layer0.opacity": "var(opaque)",
-			"layer0.tint": "var(text)",
+			"layer1.opacity": "var(opaque)",
 		},
 
 		{
@@ -1658,54 +1661,44 @@
 			"layer1.opacity": "var(opaque)",
 		},
 
-		// // Buttons
-		// {
-		// 	"class": "button_control",
-		// 	"layer0.texture": "Theme - Default/common/button.png",
-		// 	"layer0.tint": "var(button_bg)",
-		// 	"layer0.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" },
-		// 	"layer0.inner_margin": 4,
-		// 	"min_size": [80, 18],
-		// 	"content_margin": [10, 4]
-		// },
-		// {
-		// 	"class": "button_control",
-		// 	"attributes": ["hover"],
-		// 	"layer0.opacity": { "target": 0.8, "speed": 4.0, "interpolation": "smoothstep" },
-		// },
-		// {
-		// 	"class": "button_control",
-		// 	"attributes": ["pressed"],
-		// 	"layer0.opacity": { "target": 1.0, "speed": 4.0, "interpolation": "smoothstep" },
-		// },
-		// {
-		// 	"class": "button_control",
-		// 	"parents": [{"class": "dialog"}],
-		// 	"layer0.tint": "var(dialog_button_bg)",
-		// },
-		// {
-		// 	"class": "button_control",
-		// 	"attributes": ["disabled"],
-		// 	"layer0.opacity": 0.3,
-		// },
-		// {
-		// 	"class": "icon_button_group",
-		// 	"spacing": 4
-		// },
-		// {
-		// 	"class": "icon_button_control",
-		// 	"layer0.texture": "Theme - Default/common/icon_button_highlight.png",
-		// 	"layer0.tint": "var(icon_button_highlight)",
-		// 	"layer0.opacity": 0.0,
-		// 	"layer0.inner_margin": 2,
-		// 	"content_margin": 2
-		// },
-		// {
-		// 	"class": "icon_button_control",
-		// 	"attributes": ["selected"],
-		// 	"layer0.opacity": 1.0
-		// },
-
+		// Buttons
+		{
+			"class": "button_control",
+			"layer0.texture": "Theme - Default/common/button.png",
+			"layer0.opacity": "var(opaque)",
+			"layer0.tint": "var(base)",
+			"layer0.inner_margin": 4,
+			"layer1.texture": "Theme - Default/common/button.png",
+			"layer1.opacity": "var(transparent)",
+			"layer1.tint": "var(surface)",
+			"layer1.inner_margin": 4,
+			"min_size": [80, 18],
+			"content_margin": [10, 4]
+		},
+		{
+			"class": "button_control",
+			"attributes": ["hover"],
+			"layer0.opacity": "var(opaque)",
+			"layer1.opacity": "var(opaque)",
+		},
+		{
+			"class": "button_control",
+			"attributes": ["pressed"],
+			"layer0.opacity": "var(opaque)",
+			"layer1.opacity": { "target": 0.6, "speed": 6.0, "interpolation": "smoothstep" },
+		},
+		{
+			"class": "button_control",
+			"parents": [{"class": "dialog"}],
+			"layer0.opacity": "var(opaque)",
+			"layer1.opacity": "var(opaque)",
+		},
+		{
+			"class": "button_control",
+			"attributes": ["disabled"],
+			"layer0.opacity": 0.3,
+			"layer1.opacity": "var(transparent)",
+		},
 
 		{
 			"class": "icon_regex",
