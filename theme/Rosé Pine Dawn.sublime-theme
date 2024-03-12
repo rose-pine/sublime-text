@@ -24,6 +24,7 @@
 		"transparent": { "target": 0, "speed": 3.0, "interpolation": "smoothstep" },
 
 		////////////////////////////////// Default ////////////////////////////
+
 		"base_hue": "var(base)",
 		"base_tint": "var(text)",
 
@@ -146,10 +147,10 @@
 		"file_tab_close_selected_opacity": "var(opaque)",
 		"file_tab_close_selected_hover_opacity": "var(opaque)",
 
-		// "sheet_dark_modifier": "#000000",
-		// "sheet_medium_dark_modifier": "#000000",
-		// "sheet_medium_modifier": "#000000",
-		// "sheet_light_modifier": "#000000",
+		"sheet_dark_modifier": "blend(var(highlight-high) 82%)",
+		"sheet_medium_dark_modifier": "blend(var(highlight-high) 82%)",
+		"sheet_medium_modifier": "blend(var(highlight-high) 82%)",
+		"sheet_light_modifier": "blend(var(highlight-high) 82%)",
 
 		"text_widget_dark_modifier": "l(- 0%)",
 		"text_widget_light_modifier": "l(- 0%)",
