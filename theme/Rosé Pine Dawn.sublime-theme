@@ -353,9 +353,16 @@
 			"spacing": 5,
 		},
 		{
+			"class": "tabset_control",
+			"settings": ["themed_title_bar"],
+			"content_margin": [0, 0, 0, 4],
+		},
+
+		{
 			"class": "tab_connector",
 			"layer0.texture": "",
 			"layer0.opacity": 1.0,
+			"layer0.tint": "var(gold)",
 			"tint_index": 0,
 		},
 
