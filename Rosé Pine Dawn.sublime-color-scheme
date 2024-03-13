@@ -127,8 +127,8 @@
         "tags_foreground": "var(tags)",
 
         // Shadow (to the right when text overflows)
-        "shadow": "var(base)",
-        "shadow_width": "16",
+        "shadow": "var(highlight-high)",
+        "shadow_width": "2",
     },
     "rules": [
         /**
