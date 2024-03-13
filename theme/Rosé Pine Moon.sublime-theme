@@ -371,13 +371,13 @@
 			"layer0.opacity": 1.0,
 			"layer0.tint": "var(surface)",
 			"layer0.inner_margin": 0,
-			"layer1.texture": "",
+			"layer1.texture": "Theme - Default/common/button.png",
 			"layer1.opacity": 1.0,
 			"layer1.tint": "var(overlay)",
-			"layer1.inner_margin": 0,
-			"layer2.texture": "Theme - Default/common/tab_square_highlight.png",
+			"layer1.inner_margin": 4,
+			"layer2.texture": "Theme - Rose Pine/images/tab_square_highlight.png",
 			"layer2.opacity": 0.0,
-			"layer2.inner_margin": 0,
+			"layer2.inner_margin": 2,
 			"layer3.texture": "Theme - Default/common/tab_square_divider.png",
 			"layer3.inner_margin": [2, 0, 2, 0],
 			"layer3.opacity": "var(transparent)",
@@ -388,6 +388,7 @@
 			"content_margin": [12, 3, 3, 4],
 			"hit_test_level": 0.3
 		},
+
 		// We don't use animation for the selected tab opacity changed due
 		// to the hover state syncing with the hover state of the
 		// sheet_contents, which has the background_modifier that can not
