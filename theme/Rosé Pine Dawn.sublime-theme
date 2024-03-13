@@ -93,48 +93,6 @@
 		"tool_tip_bg": "var(base)",
 		"tool_tip_fg": "var(text)",
 
-		"tabset_button_opacity": "var(opaque)",
-		"tabset_new_tab_button_opacity": "var(opaque)",
-		"tabset_button_hover_opacity": "var(opaque)",
-		"tabset_button_light_tint": "var(highlight-high)",
-
-		"tabset_dark_tint_mod": "color(black a(0))",
-		"tabset_dark_bg": "var(surface)",
-		"tabset_medium_dark_tint_mod": "color(black a(0))",
-		"tabset_medium_dark_bg": "var(surface)",
-		"tabset_medium_tint_mod": "color(black a(0))",
-		"tabset_medium_bg": "var(surface)",
-		"tabset_light_tint_mod": "color(black a(0))",
-		"tabset_light_bg": "var(surface)",
-
-		"file_tab_selected_dark_tint": "var(text)",
-		"file_tab_selected_medium_dark_tint": "var(text)",
-		"file_tab_selected_medium_tint": "var(text)",
-		"file_tab_selected_light_tint": "var(text)",
-
-		"file_tab_unselected_label_color": "var(subtle)",
-		"file_tab_unselected_light_label_color": "var(subtle)",
-		"file_tab_selected_label_color": "var(text)",
-		"file_tab_selected_light_label_color": "var(text)",
-
-		"file_tab_highlight_new_tint": "var(foam)",
-		"file_tab_highlight_deleted_tint": "var(love)",
-
-		"file_tab_close_dark_tint": "var(subtle)",
-		"file_tab_close_dark_new_tint": "var(foam)",
-		"file_tab_close_dark_modified_tint": "var(rose)",
-		"file_tab_close_dark_deleted_tint": "var(love)",
-		"file_tab_close_light_tint": "var(shape_tint)",
-		"file_tab_close_light_new_tint": "var(foam)",
-		"file_tab_close_light_modified_tint": "var(rose)",
-		"file_tab_close_light_deleted_tint": "var(love)",
-
-		"file_tab_close_opacity": "var(opaque)",
-		"file_tab_close_hover_opacity": "var(opaque)",
-
-		"file_tab_close_selected_opacity": "var(opaque)",
-		"file_tab_close_selected_hover_opacity": "var(opaque)",
-
 		"sheet_dark_modifier": "blend(var(highlight-high) 82%)",
 		"sheet_medium_dark_modifier": "blend(var(highlight-high) 82%)",
 		"sheet_medium_modifier": "blend(var(highlight-high) 82%)",
@@ -158,7 +116,7 @@
 
 		"quick_panel_link_color": "var(iris)",
 
-		"viewport_always_visible_color": "var(highlight-med)",
+		"viewport_always_visible_color": "var(highlight-low)",
 		"viewport_hide_show_color": "var(highlight-med)",
 
 		"auto_complete_bg_dark_tint": "var(overlay)",
@@ -383,40 +341,46 @@
 
 		// Tabs
 		{
-			"class": "tab_control",
-			"layer0.texture": "Theme - Default/common/tab_rounded_inverse.png",
-			"layer0.inner_margin": [12, 0, 12, 0],
+			"class": "tabset_control",
+			"layer0.texture": "",
 			"layer0.opacity": 1.0,
-			"layer1.texture": "Theme - Default/common/tab_rounded.png",
-			"layer1.inner_margin": [12, 0, 12, 0],
+			"layer0.tint": "var(surface)",
+			"layer0.inner_margin": 0,
+			"content_margin": [0, 4, 0, 4],
+			"tab_overlap": 1,
+			"tab_height": 26,
+			"connector_height": 0,
+			"spacing": 5,
+		},
+		{
+			"class": "tab_connector",
+			"layer0.texture": "",
+			"layer0.opacity": 1.0,
+			"tint_index": 0,
+		},
+
+		{
+			"class": "tab_control",
+			"layer0.texture": "",
+			"layer0.opacity": 1.0,
+			"layer0.tint": "var(surface)",
+			"layer0.inner_margin": 0,
+			"layer1.texture": "",
 			"layer1.opacity": 1.0,
-			"layer1.tint": "var(base)",
-			"layer2.texture": "Theme - Default/common/tab_rounded_highlight.png",
-			"layer2.inner_margin": [12, 0, 12, 0],
+			"layer1.tint": "var(overlay)",
+			"layer1.inner_margin": 0,
+			"layer2.texture": "Theme - Default/common/tab_square_highlight.png",
 			"layer2.opacity": 0.0,
-			"layer3.texture": "Theme - Default/common/tab_rounded_divider.png",
-			"layer3.inner_margin": [7, 0, 7, 0],
-			"layer3.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
+			"layer2.inner_margin": 0,
+			"layer3.texture": "Theme - Default/common/tab_square_divider.png",
+			"layer3.inner_margin": [2, 0, 2, 0],
+			"layer3.opacity": "var(transparent)",
 			"layer3.tint": "var(highlight-med)",
 			"tint_index": 4,
 			"tint_modifier": "transparent",
 			"accent_tint_index": 2,
-			"content_margin": [16, 5, 11, 4],
+			"content_margin": [12, 3, 3, 4],
 			"hit_test_level": 0.3
-		},
-		// Tabs - background
-		// These rules prevent the opacity of un-highlighted sheets from
-		// stacking, which results in the rounded corners being dark
-		{
-			"class": "tab_control",
-			"layer0.tint": "var(surface)",
-		},
-		// The following rules prevent aliasing in the tab corner between two
-		// selected tabs
-		{
-			"class": "tab_control",
-			"attributes": ["selected"],
-			"layer0.opacity": 0,
 		},
 		// We don't use animation for the selected tab opacity changed due
 		// to the hover state syncing with the hover state of the
@@ -436,18 +400,6 @@
 			"class": "tab_control",
 			"attributes": ["!selected", "hover"],
 			"layer1.opacity": "var(transparent)",
-		},
-		{
-			"class": "tab_control",
-			"attributes": ["selected", "left_overhang"],
-			"layer0.texture": "Theme - Default/common/tab_rounded_left_overhang.png",
-			"layer1.texture": "Theme - Default/common/tab_rounded_left_overhang.png",
-		},
-		{
-			"class": "tab_control",
-			"attributes": ["selected", "right_overhang"],
-			"layer0.texture": "Theme - Default/common/tab_rounded_right_overhang.png",
-			"layer1.texture": "Theme - Default/common/tab_rounded_right_overhang.png",
 		},
 		// Tabs - modified highlight
 		{
@@ -472,8 +424,8 @@
 			"settings": {
 				"highlight_modified_tabs": true
 			},
-			"layer2.texture": "Theme - Default/common/tab_rounded_pinstripe.png",
-			"layer2.inner_margin": [12, 0, 12, 0],
+			"layer2.texture": "Theme - Default/common/tab_square_pinstripe.png",
+			"layer2.inner_margin": [0, 0, 0, 0],
 		},
 		{
 			"class": "tab_control",
@@ -485,28 +437,26 @@
 			"attributes": ["deleted"],
 			"layer2.tint": "var(file_tab_highlight_deleted_tint)",
 		},
-
-		// Tabs - dividers
 		{
 			"class": "tab_control",
 			"attributes": ["right", "!left"],
-			"layer3.texture": "Theme - Default/common/tab_rounded_divider_right.png",
+			"layer3.texture": "Theme - Default/common/tab_square_divider_right.png",
 		},
 		{
 			"class": "tab_control",
 			"attributes": ["left_of_selected", "!left", "!right_of_selected", "!selected"],
-			"layer3.texture": "Theme - Default/common/tab_rounded_divider_right.png",
+			"layer3.texture": "Theme - Default/common/tab_square_divider_right.png",
 			"layer3.opacity": "var(opaque)",
 		},
 		{
 			"class": "tab_control",
 			"attributes": ["left", "!right"],
-			"layer3.texture": "Theme - Default/common/tab_rounded_divider_left.png",
+			"layer3.texture": "Theme - Default/common/tab_square_divider_left.png",
 		},
 		{
 			"class": "tab_control",
 			"attributes": ["right_of_selected", "!right", "!left_of_selected", "!selected"],
-			"layer3.texture": "Theme - Default/common/tab_rounded_divider_left.png",
+			"layer3.texture": "Theme - Default/common/tab_square_divider_left.png",
 			"layer3.opacity": "var(opaque)",
 		},
 		{
@@ -514,6 +464,7 @@
 			"attributes": ["!highlighted", "!selected", "!left_of_selected", "!right_of_selected"],
 			"layer3.opacity": "var(opaque)",
 		},
+
 
 		// Tabs - label
 		{
@@ -727,6 +678,12 @@
 			"attributes": ["hover"],
 			"layer0.opacity": "var(opaque)",
 			"layer1.opacity": "var(opaque)"
+		},
+
+		{
+		    "class": "sheet_container_control",
+		    "layer0.tint": "var(base)",
+		    "layer0.opacity": 1
 		},
 
 		// Views
