@@ -432,7 +432,7 @@
 			"settings": {
 				"highlight_modified_tabs": true
 			},
-			"layer2.texture": "Theme - Default/common/tab_square_pinstripe.png",
+			"layer2.texture": "Theme - Rose Pine/images/tab_square_pinstripe.png",
 			"layer2.inner_margin": [0, 0, 0, 0],
 		},
 		{
