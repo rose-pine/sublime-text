@@ -19,6 +19,21 @@ To install manually, from the menu go to Preferences > Browse Packages. Then dow
 
 This package is also available on [Package Control](https://packagecontrol.io).
 
+This package consists of both Color Schemes (for syntax highlighting) and Themes (for the application UI). For the best result select a matching combination for both:
+
+```json
+{
+    "theme": "Rosé Pine.sublime-theme",
+    "color_scheme": "Rosé Pine.sublime-color-scheme",
+}
+```
+
+The three palettes are availabe for each:
+
+- Rosé Pine
+- Rosé Pine Moon
+- Rosé Pine Dawn
+
 ## Gallery
 
 <img width="1079" alt="Rosé Pine in Sublime Text" src="https://github.com/rose-pine/sublime-text/assets/2543659/8c05070c-fdff-4c69-9262-d1006298c4e1">
