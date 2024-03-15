@@ -21,7 +21,7 @@ This package is also available on [Package Control](https://packagecontrol.io).
 
 ## Gallery
 
-![Sublime Text with Rosé Pine](https://i.imgur.com/aO8nlPJ.png)
+<img width="1079" alt="Rosé Pine in Sublime Text" src="https://github.com/rose-pine/sublime-text/assets/2543659/8c05070c-fdff-4c69-9262-d1006298c4e1">
 
 ## Update
 
