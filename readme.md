@@ -13,8 +13,11 @@
 
 ## Usage
 
-For Sublime Text 4, should also work on 3.
-To install, from the menu go to Preferences > Browse Packages. Then download this reposity to a new directory called "Rosé Pine" inside the "Packages" directory.
+For Sublime Text 4, should also work on version 3.
+
+To install manually, from the menu go to Preferences > Browse Packages. Then download this reposity to a new directory called "Theme - Rose Pine" inside the "Packages" directory.
+
+This package is also available on [Package Control](https://packagecontrol.io).
 
 ## Gallery
 
@@ -23,6 +26,8 @@ To install, from the menu go to Preferences > Browse Packages. Then download thi
 ## Update
 
 `npx @rose-pine/build -t template.sublime-color-scheme -o .`
+
+`cd theme && npx @rose-pine/build -t template.sublime-theme -o .`
 
 ## Thanks to 
 

@@ -100,7 +100,7 @@
         "inactive_selection": "var(highlight-med)",
         "inactive_selection_border": "var(highlight-med)",
         "inactive_selection_foreground": "var(text)",
-        "selection_corner_style": "square",
+        "selection_corner_style": "rounded",
         "selection_corner_radius": "2", // default
 
         // Find
@@ -127,8 +127,8 @@
         "tags_foreground": "var(tags)",
 
         // Shadow (to the right when text overflows)
-        "shadow": "var(base)",
-        "shadow_width": "16",
+        "shadow": "var(highlight-high)",
+        "shadow_width": "2",
     },
     "rules": [
         /**
