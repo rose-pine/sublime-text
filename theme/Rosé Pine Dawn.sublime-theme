@@ -346,16 +346,16 @@
 			"layer0.opacity": 1.0,
 			"layer0.tint": "var(surface)",
 			"layer0.inner_margin": 0,
-			"content_margin": [0, 4, 0, 4],
+			"content_margin": [0, 4, 0, 6],
 			"tab_overlap": 1,
-			"tab_height": 26,
+			"tab_height": 30,
 			"connector_height": 0,
 			"spacing": 5,
 		},
 		{
 			"class": "tabset_control",
 			"settings": ["themed_title_bar"],
-			"content_margin": [0, 0, 0, 4],
+			"content_margin": [0, 0, 0, 6],
 		},
 
 		{
@@ -694,6 +694,13 @@
 		    "layer0.opacity": 1
 		},
 
+		{
+			"class": "overlay_control",
+			"layer0.tint": "var(overlay_bg)",
+			"layer0.opacity": 1.0,
+			"content_margin": [8, 10]
+		},
+
 		// Views
 		{
 			"class": "grid_layout_control",
@@ -724,6 +731,12 @@
 			"layer1.texture": "Theme - Default/common/fold_opened.png",
 		},
 
+		{
+			"class": "panel_control",
+			"layer0.tint": "var(panel_bg)",
+			"layer0.opacity": 1.0,
+			"content_margin": 4
+		},
 		{
 			"class": "panel_close_button",
 			"layer0.texture": "Theme - Default/common/panel_close.png",
@@ -999,6 +1012,12 @@
 
 
 		// Status Bar
+		{
+			"class": "status_bar",
+			"layer0.tint": "var(status_bar_bg)",
+			"layer0.opacity": 1.0,
+			"content_margin": [8, 2, 8, 2]
+		},
 		{
 			"class": "sidebar_button_control",
 			"layer0.texture": "Theme - Default/common/sidebar_button.png",
