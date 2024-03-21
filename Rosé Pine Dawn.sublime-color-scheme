@@ -199,6 +199,43 @@
             "foreground": "var(pine)"
         },
 
+        // Diffs
+        {
+            "name": "diff: header",
+            "scope": "meta.diff, meta.diff.header",
+            "foreground": "var(muted)"
+        },
+        {
+            "name": "diff: range",
+            "scope": "meta.diff.range",
+            "foreground": "var(pine)"
+        },
+        {
+            "name": "diff: deleted",
+            "scope": "markup.deleted",
+            "foreground": "var(love)"
+        },
+        {
+            "name": "diff: changed",
+            "scope": "markup.changed",
+            "foreground": "var(rose)"
+        },
+        {
+            "name": "diff: inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(foam)"
+        },
+        {
+            "name": "Warning",
+            "scope": "markup.warning",
+            "foreground": "var(gold)"
+        },
+        {
+            "name": "Error",
+            "scope": "markup.error",
+            "foreground": "var(love)"
+        },
+
         /**
          * Enhancements
          */
