@@ -144,7 +144,7 @@
         },
         {
             "name": "Comments",
-            "scope": "comment",
+            "scope": "comment, punctuation.definition.comment",
             "foreground": "var(comments)"
         },
         {
