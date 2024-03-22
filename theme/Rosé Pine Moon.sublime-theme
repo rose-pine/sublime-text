@@ -696,9 +696,11 @@
 
 		{
 			"class": "overlay_control",
-			"layer0.tint": "var(overlay_bg)",
+			"layer0.tint": "var(overlay)",
+			"layer0.texture": "Theme - Rose Pine/images/overlay.png",
+			"layer0.inner_margin": 6,
 			"layer0.opacity": 1.0,
-			"content_margin": [8, 10]
+			"content_margin": 8
 		},
 
 		// Views
