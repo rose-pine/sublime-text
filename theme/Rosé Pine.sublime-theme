@@ -348,7 +348,7 @@
 			"layer0.inner_margin": 0,
 			"layer1.texture": "Theme - Rose Pine/images/border_bottom.png",
 			"layer1.opacity": 1.0,
-			"layer1.tint": "var(highlight-low)",
+			"layer1.tint": "var(overlay)",
 			"layer1.inner_margin": [0, 2],
 			"content_margin": [0, 4, 0, 4],
 			"tab_overlap": 1,
@@ -1050,7 +1050,7 @@
 			"layer0.opacity": 1.0,
 			"layer1.texture": "Theme - Rose Pine/images/border_right.png",
 			"layer1.opacity": 1.0,
-			"layer1.tint": "var(highlight-low)",
+			"layer1.tint": "var(overlay)",
 			"layer1.inner_margin": [2, 0],
 			"content_margin": 0,
 
