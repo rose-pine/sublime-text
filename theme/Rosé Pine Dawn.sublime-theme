@@ -346,16 +346,19 @@
 			"layer0.opacity": 1.0,
 			"layer0.tint": "var(surface)",
 			"layer0.inner_margin": 0,
-			"content_margin": [0, 4, 0, 6],
+			"layer1.texture": "Theme - Rose Pine/images/border_bottom.png",
+			"layer1.opacity": 1.0,
+			"layer1.tint": "var(highlight-low)",
+			"layer1.inner_margin": [0, 2],
+			"layer2.texture": "Theme - Rose Pine/images/border_top.png",
+			"layer2.opacity": 1.0,
+			"layer2.tint": "var(highlight-low)",
+			"layer2.inner_margin": [0, 2],
+			"content_margin": [0, 6, 0, 6],
 			"tab_overlap": 1,
 			"tab_height": 28,
 			"connector_height": 0,
 			"spacing": 5,
-		},
-		{
-			"class": "tabset_control",
-			"settings": ["themed_title_bar"],
-			"content_margin": [0, 0, 0, 6],
 		},
 
 		{
@@ -1012,7 +1015,6 @@
 			"layer0.tint": "var(text)"
 		},
 
-
 		// Status Bar
 		{
 			"class": "status_bar",
@@ -1044,5 +1046,22 @@
 			"border_color": "var(highlight-high)",
 			"content_margin": [3, 0]
 		},
+
+		// Side Bar
+		{
+			"class": "sidebar_container",
+			"layer0.tint": "var(sidebar_bg)",
+			"layer0.opacity": 1.0,
+			"layer1.texture": "Theme - Rose Pine/images/border_right.png",
+			"layer1.opacity": 1.0,
+			"layer1.tint": "var(highlight-low)",
+			"layer1.inner_margin": [2, 0],
+			"layer2.texture": "Theme - Rose Pine/images/border_top.png",
+			"layer2.opacity": 1.0,
+			"layer2.tint": "var(highlight-low)",
+			"layer2.inner_margin": [0, 2],
+			"content_margin": 0,
+
+		}
 	]
 }
