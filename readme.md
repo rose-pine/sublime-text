@@ -40,9 +40,13 @@ The three palettes are availabe for each:
 
 ## Update
 
-`npx @rose-pine/build -t template.sublime-color-scheme -o .`
+The themes use the same implementation using Sublime's "extend" feature. Any changes to `Rosé Pine.sublime-theme` are immediately reflected in the other derived themes.
 
-`cd theme && npx @rose-pine/build -t template.sublime-theme -o .`
+For the color schemes, update the template file and synchronise the others using this command:
+
+```sh
+npx @rose-pine/build -t template.sublime-color-scheme -o .
+```
 
 ## Thanks to 
 
