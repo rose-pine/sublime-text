@@ -169,7 +169,7 @@
 		{
 			"class": "title_bar",
 			"settings": ["themed_title_bar"],
-			"bg": "var(surface)",
+			"bg": "var(overlay)",
 			"fg": "var(text)"
 		},
 
@@ -350,20 +350,11 @@
 			"layer1.opacity": 1.0,
 			"layer1.tint": "var(highlight-low)",
 			"layer1.inner_margin": [0, 2],
-			"layer2.texture": "Theme - Rose Pine/images/border_top.png",
-			"layer2.opacity": 0,
-			"layer2.tint": "var(highlight-low)",
-			"layer2.inner_margin": [0, 2],
 			"content_margin": [0, 4, 0, 4],
 			"tab_overlap": 1,
 			"tab_height": 28,
 			"connector_height": 0,
 			"spacing": 5,
-		},
-		{
-			"class": "tabset_control",
-			"settings": ["themed_title_bar"],
-			"layer2.opacity": 1.0,
 		},
 
 		{
@@ -1061,10 +1052,6 @@
 			"layer1.opacity": 1.0,
 			"layer1.tint": "var(highlight-low)",
 			"layer1.inner_margin": [2, 0],
-			"layer2.texture": "Theme - Rose Pine/images/border_top.png",
-			"layer2.opacity": 1.0,
-			"layer2.tint": "var(highlight-low)",
-			"layer2.inner_margin": [0, 2],
 			"content_margin": 0,
 
 		}
