@@ -350,9 +350,9 @@
 			"layer1.opacity": 1.0,
 			"layer1.tint": "var(overlay)",
 			"layer1.inner_margin": [0, 2],
-			"content_margin": [0, 4, 0, 4],
+			"content_margin": [0, 1],
 			"tab_overlap": 1,
-			"tab_height": 28,
+			"tab_height": 34,
 			"connector_height": 0,
 			"spacing": 5,
 		},
@@ -371,15 +371,16 @@
 			"layer0.opacity": 1.0,
 			"layer0.tint": "var(surface)",
 			"layer0.inner_margin": 0,
-			"layer1.texture": "Theme - Default/common/button.png",
+			"layer1.texture": "Theme - Rose Pine/images/tab.png",
 			"layer1.opacity": 1.0,
 			"layer1.tint": "var(overlay)",
-			"layer1.inner_margin": 4,
-			"layer2.texture": "Theme - Rose Pine/images/tab_square_highlight.png",
+			"layer1.inner_margin": 8,
+			"layer2.texture": "Theme - Rose Pine/images/tab_square_pinstripe.png",
 			"layer2.opacity": 0.0,
-			"layer2.inner_margin": 2,
+			"layer2.inner_margin": [0, 2],
+			"layer2.tint": "var(rose)",
 			"layer3.texture": "Theme - Default/common/tab_square_divider.png",
-			"layer3.inner_margin": [2, 0, 2, 0],
+			"layer3.inner_margin": [2, 0, 2,  0],
 			"layer3.opacity": "var(transparent)",
 			"layer3.tint": "var(highlight-med)",
 			"tint_index": 4,
@@ -406,7 +407,7 @@
 		{
 			"class": "tab_control",
 			"attributes": ["!selected", "hover"],
-			"layer1.opacity": "var(transparent)",
+			"layer1.opacity": "var(transparent)" ,
 		},
 		// Tabs - modified highlight
 		{
@@ -415,34 +416,17 @@
 			"settings": {
 				"highlight_modified_tabs": true
 			},
-			"layer2.opacity": 0.8
-		},
-		{
-			"class": "tab_control",
-			"attributes": ["dirty", "selected"],
-			"settings": {
-				"highlight_modified_tabs": true
-			},
 			"layer2.opacity": 1.0
 		},
 		{
 			"class": "tab_control",
-			"attributes": ["dirty", "!selected"],
-			"settings": {
-				"highlight_modified_tabs": true
-			},
-			"layer2.texture": "Theme - Rose Pine/images/tab_square_pinstripe.png",
-			"layer2.inner_margin": [0, 0, 0, 0],
-		},
-		{
-			"class": "tab_control",
 			"attributes": ["added"],
-			"layer2.tint": "var(file_tab_highlight_new_tint)",
+			"layer2.tint": "var(foam)",
 		},
 		{
 			"class": "tab_control",
 			"attributes": ["deleted"],
-			"layer2.tint": "var(file_tab_highlight_deleted_tint)",
+			"layer2.tint": "var(love)",
 		},
 		{
 			"class": "tab_control",
