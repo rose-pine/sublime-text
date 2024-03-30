@@ -720,6 +720,10 @@
 			"class": "panel_control",
 			"layer0.tint": "var(panel_bg)",
 			"layer0.opacity": 1.0,
+			"layer1.texture": "Theme - Rose Pine/images/border_bottom.png",
+			"layer1.opacity": 1.0,
+			"layer1.tint": "var(highlight-med)",
+			"layer1.inner_margin": [0, 2],
 			"content_margin": 4
 		},
 		{
