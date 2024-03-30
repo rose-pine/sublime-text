@@ -350,7 +350,7 @@
 			"layer1.opacity": 1.0,
 			"layer1.tint": "var(overlay)",
 			"layer1.inner_margin": [0, 2],
-			"content_margin": [0, 1],
+			"content_margin": [0, 1, 0, 2],
 			"tab_overlap": 1,
 			"tab_height": 34,
 			"connector_height": 0,
@@ -386,7 +386,7 @@
 			"tint_index": 4,
 			"tint_modifier": "transparent",
 			"accent_tint_index": 2,
-			"content_margin": [12, 3, 3, 4],
+			"content_margin": [16, 3, 8, 4],
 			"hit_test_level": 0.3
 		},
 
