@@ -998,7 +998,7 @@
 		// Status Bar
 		{
 			"class": "status_bar",
-			"layer0.tint": "var(status_bar_bg)",
+			"layer0.tint": "var(overlay)",
 			"layer0.opacity": 1.0,
 			"content_margin": [8, 2, 8, 2]
 		},
@@ -1030,14 +1030,13 @@
 		// Side Bar
 		{
 			"class": "sidebar_container",
-			"layer0.tint": "var(sidebar_bg)",
+			"layer0.tint": "var(surface)",
 			"layer0.opacity": 1.0,
 			"layer1.texture": "Theme - Rose Pine/images/border_right.png",
 			"layer1.opacity": 1.0,
 			"layer1.tint": "var(overlay)",
 			"layer1.inner_margin": [2, 0],
 			"content_margin": 0,
-
 		}
 	]
 }
