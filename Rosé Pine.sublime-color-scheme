@@ -297,6 +297,12 @@
             "font_style": "bold",
         },
         {
+            "name": "Markdown headings",
+            "scope": "markup.heading punctuation.definition.heading",
+            "foreground": "var(rose)",
+            "font_style": "normal",
+        },
+        {
             "name": "Markdown link href",
             "scope": "markup.underline.link",
             "foreground": "var(pine)",
