@@ -331,5 +331,18 @@
             "scope": "markup.raw",
             "foreground": "var(love)",
         },
+
+        // Find results
+
+        {
+            "name": "Find line number",
+            "scope": "constant.numeric.line-number",
+            "foreground": "var(muted)",
+        },
+        {
+            "name": "Find match line number",
+            "scope": "constant.numeric.line-number.match",
+            "foreground": "var(booleans)",
+        },
     ]
 }
