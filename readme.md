@@ -15,7 +15,7 @@
 
 For Sublime Text 4, should also work on version 3.
 
-To install manually, from the menu go to Preferences > Browse Packages. Then download this reposity to a new directory called "Theme - Rose Pine" inside the "Packages" directory.
+To install manually, from the menu go to Preferences > Browse Packages. Then download this repository to a new directory called "Theme - Rose Pine" inside the "Packages" directory.
 
 This package is also available on [Package Control](https://packagecontrol.io).
 
@@ -28,7 +28,7 @@ This package consists of both Color Schemes (for syntax highlighting) and Themes
 }
 ```
 
-The three palettes are availabe for each:
+The three palettes are available for each:
 
 - Rosé Pine
 - Rosé Pine Moon
