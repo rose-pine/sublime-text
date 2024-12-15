@@ -182,19 +182,19 @@
 		{
 			"class": "tree_row",
 			"attributes": ["selectable", "hover"],
-			"layer0.tint": "var(highlight-low)",
+			"layer0.tint": "color(var(quick_panel_selected_row_bg) blend(var(sidebar_bg) 50%))",
 			"layer0.opacity": 1,
 		},
 		{
 			"class": "tree_row",
 			"attributes": ["selected"],
-			"layer0.tint": "var(highlight-low)",
+			"layer0.tint": "color(var(quick_panel_selected_row_bg) blend(var(sidebar_bg) 50%))",
 			"layer0.opacity": 1,
 		},
 		{
 			"class": "tree_row",
 			"attributes": ["highlighted"],
-			"layer0.tint": "var(highlight-low)",
+			"layer0.tint": "color(var(quick_panel_selected_row_bg) blend(var(sidebar_bg) 50%))",
 			"layer0.opacity": 1,
 		},
 
